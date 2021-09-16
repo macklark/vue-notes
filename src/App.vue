@@ -23,6 +23,12 @@
     <!-- Getting the custom event and passing toggleHandler function -->
   </div>
   <button @click="toggleHandler">Click</button>
+
+  <!-- Teleport is a component provided by vue to transfer template from one component to another or something out of vue instance scope. -->
+  <teleport to=".content">
+    <h1>I am from vue instance</h1>
+    <p>teleporting...</p>
+  </teleport>
 </template>
 
 <script>
